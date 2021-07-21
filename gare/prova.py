@@ -1,0 +1,100 @@
+#! /usr/bin/env python3
+
+#!/bin/env python3
+
+# pip3 install pwntools
+from pwn import remote, context
+
+
+def solve():
+    # print(stato,mosse)
+    mosse = mosse
+    stato = stato
+
+    ans = ""
+    for x in mosse:
+        
+
+    return '1'
+
+r = remote("test2.challs.jeopardy.olicyber.it", 15004)
+# context.log_level = 'debug'
+r.recvlines(20)
+
+livello = r.recvline()
+while livello.startswith(b"Livello"):
+    stato = [int(_) for _ in r.recvline(False).decode().split()]
+    mosse = []
+    while True:
+        s = r.recvline(False).decode()
+        if s == "":
+            break
+        mosse.append(["ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(_) for _ in s.split()])
+    res = solve()
+    r.sendline(res)
+    r.recvlines(2)
+    livello = r.recvline()
+
+
+# import requests
+# import json
+# url = 'http://frittomisto.challs.jeopardy.olicyber.it/register'
+
+# utente = {
+#     "username": "ciaociao",
+#     "password": "ciao",
+#     "invite": '\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09'
+# }
+
+# qualcosa = json.dumps(utente)
+# print(qualcosa)
+
+
+# coso = '{"username": "ciaociaociao", "password": "ciaociaociaociaociaociao", "invite": "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t"}'
+# print(json.loads(qualcosa))
+# res = requests.post('http://frittomisto.challs.jeopardy.olicyber.it/register', data = data)
+
+# print(res.text)
+
+# from pwnlib import flag
+
+
+# idxs = [0x01,0x02,0x03,0x04,0x06,0x08,0x09,0x0a,0x0c,0x0e,0x0f,0x10,0x11,0x14,0x15,0x16,0x17,0x18,0x1a,0x1b,0x1c,0x1f,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,0x28,0x2c,0x2d,0x2e,0x30,0x31,0x32,0x33,0x36,0x37,0x38,0x3a,0x3b,0x3d,0x3e,0x3f,0x40,0x42,0x43,0x45,0x46,0x47,0x48,0x4a,0x4d,0x4e,0x4f]
+# board = [5,0x30,0x30,0x30,0x30,0x33,0x30,0x38,0x30,0x30,0x30,0x33,0x30,0x34,0x30,0x30,0x30,0x30,0x37,0x38,0x30,0x30,0x30,0x30,0x30,0x39,0x30,0x30,0x30,0x31,0x32,0x30,0x30,0x30,0x30,0x30,0x30,0x30,0x30,0x30,0x30,0x31,0x39,0x36,0x30,0x30,0x30,0x37,0x30,0x30,0x30,0x30,0x33,0x32,0x30,0x30,0x30,0x34,0x30,0x30,0x35,0x30,0x30,0x30,0x30,0x32,0x30,0x30,0x39,0x30,0x30,0x30,0x30,0x39,0x30,0x31,0x32,0x30,0x30,0x30,0x36,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00]
+
+# flag_value = b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+
+# def ords(numero):
+#     ans = 0
+#     if numero < ord('1') or numero > ord('9'): ans = 9
+#     else: ans = numero - 0x30
+    
+#     return ans
+# print(len(idxs), len(flag_value))
+# for i in range(len(flag_value)):
+#     temp = ords(flag_value[i])
+#     board[idxs[i]] = temp
+
+# locale = [b'\x00'] *10
+# for i in range(9):
+#     for j in range(9):
+#         print('numero corrente', (i*9) + j, board[(i*9) + j])
+#         if locale[ board[(i*9) + j]] != b'\x00':
+#             print(' problema')
+#             exit(1)
+
+       
+#         locale[ board[(i*9) + j]] = '\x01'
+
+# print(board)
+# # from base64 import b64decode, b64encode
+# import json 
+# utente = {
+#     "username": "ciaociao",
+#     "password": "ciao",
+#     "invite": '\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09'
+# }
+# print(json.dumps(utente))
+# region piccolo RSA
+
+

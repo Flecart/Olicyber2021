@@ -1,0 +1,45 @@
+
+# Fritto misto 
+Sembra che sia un SQLI, blind, perch'e posso solo sapere se l' utente esiste o meno
+
+O no, sono due vulnerabilit`a diverse, sull astessa challenge
+
+-- TODO
+Script con like e vedere se midice se esiste qualche utente,allo stesso modo per la password
+
+# Flag downloader
+Devo fare finta di avere la versione premium
+
+Nella crezione di un account chiede creazione dell' account, e poi va inbuy con qualche altra info che non ho capito
+-- TODO
+Scoprire in che modo checka se sono premium o meno?
+Quardare se ci sono qualche injection nel form dei prezzi
+
+
+# un po di storia
+vigenere, ma non so con quale metodo in quanto probbi `e offuscato in qauclhe modo? non cosnoco la chiave..
+
+
+# sound of system
+Fa CBC implementato da lui
+
+# reversable
+0x39 charatteri la flag
+
+chack rows guarda con due cicli,ed esce quando va fuori la riga, dovrebbe essere sempre giusto perch'e ci sono \0 alla fine sempre...
+Guarda solo se la riga finisc eper null 
+sembra sia un array bidimensionale 8x8 fillato con \0 alla fine
+
+int ord(char param_1)
+
+{
+  int iVar1;
+  
+  if ((param_1 < '1') || ('9' < param_1)) {
+    iVar1 = 9;
+  }
+  else {
+    iVar1 = param_1 + -0x30;
+  }
+  return iVar1;
+}

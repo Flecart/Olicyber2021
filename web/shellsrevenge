@@ -1,0 +1,11 @@
+ho usato ngrok per esporre un port privato.
+
+quindi ad esempio 
+
+ngrok tcp 8088
+
+poi ho mandato una mini reverse shell
+
+e da me mi sono connesso con nc -lvp 8088 e ho potuto prenderla
+
+flag{sh3l1_p0w3r_1s_k00p4_p0w3r}

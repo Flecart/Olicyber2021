@@ -1,0 +1,11 @@
+#! /usr/bin/env python3
+
+from base64 import b64decode
+
+print(b64decode('BAh7CkkiD3Nlc3Npb25faWQGOgZFVG86HVJhY2s6OlNlc3Npb246OlNlc3Npb25JZAY6D0BwdWJsaWNfaWRJIkUxOTg0NDE4NjQxOTAzZWZhZmIzNDMzMTg5NDIwOTU1N2I2N2Q2YzRjNTg5ZjkyYThmYTllNzYyYTc0NDY1NDUxBjsARkkiCWNzcmYGOwBGSSIxWVBYblBaZC82b21vNm9SSjdWcjdlMXFEcUZPeGpMSEVJMWgzT3FqcG9mOD0GOwBGSSINdHJhY2tpbmcGOwBGewZJIhRIVFRQX1VTRVJfQUdFTlQGOwBUSSItZDM3YjRiYWIwYzQ0MjFlYTc3MGU5YTZlMDNiMDI4Yjg0ZDllYzgwNQY7AEZJIg11c2VybmFtZQY7AEZJIg1jaWFvY2lhbwY7AFRJIg1pc19hZG1pbgY7AEZG--6e11b46a60e76d6e9b37e59b5ee4296da029238c='))
+
+what =b'F\xe9\xeduo\x8e\x9a\xebG\xbb\xe9\xde\x9e\xf5\xbd\xfb{\x9f[\xe5\xe7\xb8\xdb\xde\x9dkM\xbd\xdb\x7f\x1c'
+
+
+print(what)
+print(len(what))

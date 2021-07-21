@@ -1,0 +1,6 @@
+bisogna creare innanzitutto un cookie, con un utente a caso e connettersi con quello,
+
+Poi prendi il cookie di sessione, lo decodi e cambi il nome utente in admin
+
+ecco la flag
+flag{c00ki3_4rmy_will_c0nqu3r_th3_w0rld!}

@@ -1,0 +1,8 @@
+flag{quantum_mechanics_makes_absolutely_no_sense.}
+
+Quella qui sopra `e la flag. In particolare ho fatto la prima connessione con tofu
+che in verbose trovo il dominio della flag
+Poi il pinguino mi consiglia diutilizzare il protocollo flag che fattio con alpn
+
+
+gnutls-cli quantum.challs.olicyber.it:10503 -V --tofu --sni-hostname=fl4gg.quantum-transport-layer.test --alpn=flag 

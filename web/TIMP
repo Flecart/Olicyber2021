@@ -1,0 +1,23 @@
+ahaha questa una difficile specie di sfuggita...
+
+Molto difficile cercare di uscire dallo spazio e limitazione di caratteri soprattuto!
+
+metto ${IFS} al posto dello spazio, che solitamente `e per default uno spazio, un tab o qualcosa
+di solito serve per dividere le parole, ma non ho cpaito molto bene
+guarda qua se vuoi approfondire
+https://unix.stackexchange.com/questions/184863/what-is-the-meaning-of-ifs-n-in-bash-scripting
+descrive su che base deve dividere una stringa credo...
+
+un commento vicino a questa
+https://stackoverflow.com/questions/49785255/bypass-filtering-in-bash-for-and-space
+mi ha portato alla soluzione, alla fine si deve saper googlare:
+https://unix.stackexchange.com/questions/351331/how-to-send-a-command-with-arguments-without-spaces
+questo `e dove ho scoperto il coso di unix...
+
+
+comandi sono stati tipo 
+more${IFS}/flag.txt|cut${IFS}-c8-20  
+
+soperto a pezzettini tutta la flag, bastava cambiare i valori infondo
+
+flag{1t's_4_l0ng_fl4g_but_s0me0n3_h4d_t0_re4d_1t!}
